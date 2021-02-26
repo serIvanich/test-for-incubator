@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasks</title>
+</head>
+
+<body>
+
+    <script>
+
+        // find min/max number and index of array
+        let numbers = [34, 1, 77, 5, 99, 999, 3, 55, 81, 47, 101, 72]
+        let minNum = 100000
+        let maxNum = 0
+        let indexMin
+        let indexMax
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] < minNum) {
+                minNum = numbers[i]
+                indexMin = i
+            } else if (numbers[i] > maxNum) {
+                maxNum = numbers[i]
+                indexMax = i
+            }
+
+        }
+        console.log(`minimum in array ${minNum} have index ${indexMin}
+            maximum in array ${maxNum} have index ${indexMax}`)
+
+
+        // a>>b b>>a
+        let a = 'yess a'
+        let b = 'noo b'
+        console.log(a, b)
+        let c = a
+        a = b
+        b = c
+        console.log(a, b)
+
+        // find sum two number
+        superSum = (x, y) => {
+            alert(x + y)
+        }
+        superSum(24, 11)
+
+        // find max number in array
+        findMax = (numArray) => {
+            return Math.max(...numArray)
+        }
+        console.log(findMax(numbers))
+
+    </script>
+</body>
+
+</html>

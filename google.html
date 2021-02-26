@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>google</title>
+	<link rel="stylesheet" type="text/css" href="google.css">
+</head>
+<body>
+	<div>
+		<div class="hed">
+			<h1 id='heading'>'GOOGLE'</h1>
+		</div>
+		<div class="frm">
+			<form action="">
+				<div>
+					<input id="txt" type="text" name="found" class="field-input" placeholder="input your text for found" value="">
+				</div>
+				<div>
+					<button id="btn" type="sumbit" class="but" name="text">found</button>
+				</div>
+			</form>
+		</div>
+		
+	</div>
+	
+
+	
+	<script type="text/javascript">
+
+		let client = []
+		client[0] = {
+			name: "Kelly",
+			age: "11",
+		}
+		client[1] = {
+			name: "Max",
+			age: "15",
+		}
+		client[2] = {
+			name: "Leonid",
+			age: "43",
+		}
+		client[3] = {
+			name: "Violeta",
+			age: "27",
+		}
+
+		let textGoogle = () => setTimeout(() => {return alert("Yandex is better!But it's not accurate\n" + client[3].name)}, )
+
+		someFunc = () => {
+			let text = document.getElementById("txt").value
+			if (text === "google"){ 
+				textGoogle()
+			} else {
+				alert(`${text}\n${client[1].name}`)
+			}
+		}
+		document.getElementById("btn").onclick = someFunc
+
+		
+	</script>
+</body>
+</html>
